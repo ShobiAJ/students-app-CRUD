@@ -1,0 +1,40 @@
+.navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    justify-content: center;
+    width: 70%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+th,
+td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.navbar-brand {
+    font-size: 30px;
+}
+
+
+.action-icons .fa-trash {
+    color: rgb(169, 33, 33);
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.action-icons .fa-pen {
+    color: rgb(56, 123, 190);
+    cursor: pointer;
+}

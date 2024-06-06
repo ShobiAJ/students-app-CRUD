@@ -1,0 +1,50 @@
+{
+  "signup_users": [
+    {
+      "name": "shobiga",
+      "email": "shobiaj.20@gmail.com",
+      "mobile": "1234567",
+      "password": "1998",
+      "id": "1"
+    },
+    {
+      "name": "Hensika",
+      "email": "shobiaj.20@gmail.com",
+      "mobile": "890",
+      "password": "2006",
+      "id": "2"
+    },
+    {
+      "name": "shan",
+      "email": "shobiaj.20@gmail.com",
+      "mobile": "9000",
+      "password": "1997",
+      "id": "3"
+    },
+    {
+      "name": "jai",
+      "email": "shobiaj.20@gmail.com",
+      "mobile": "7878967890",
+      "password": "2000",
+      "id": "4"
+    },
+    {
+      "name": "CEO",
+      "email": "ceo@etradeconsulting.in",
+      "mobile": "7094956963",
+      "password": "ShobikaAshwin",
+      "id": "5"
+    }
+  ],
+  "student_list": [
+    {
+      "fname": "Shobika",
+      "lname": "J",
+      "email": "shobiaj.20@gmail.com",
+      "mobile": "07530009179",
+      "courses": "Tester",
+      "id": "2"
+    }
+  ],
+  "profile": {}
+}

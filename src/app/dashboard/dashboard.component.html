@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#">Student Form</a>
+        <form class="d-flex" role="search">
+          <button class="btn btn-outline-success " type="submit" (click)="onAddStudent()">Add Student</button>
+          <button class="btn btn-outline-danger" style="margin-left: 10px;" type="submit" (click)="onLogout()">Log Out</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <table class="table table-hover w-70" *ngIf="response.length > 0">
+    <thead>
+      <tr>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Mobile Number</th>
+        <th scope="col">Email</th>
+        <th scope="col">Course</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of response; let i=index">
+        <td scope="row">{{item.fname}}</td>
+        <td>{{item.lname}}</td>
+        <td>{{item.mobile}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.courses}}</td>
+        <td class="action-icons">
+            <i class="fa-solid fa-trash" (click)="onDelete(item.id)"></i>
+            <i class="fa-solid fa-pen" (click)="onEdit(item)"></i>
+        </td>
+      </tr>
+    </tbody>
+  </table>
