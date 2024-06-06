@@ -1,0 +1,46 @@
+<!-- Pills navs -->
+
+<div class="tab-content">
+    <h1 class="text-center text-white">Sign Up</h1>
+
+    <form [formGroup]="signupForm" (ngSubmit)="onClickSignUp()">
+        <div class="form-outline mb-4">
+            <label class="form-label text-white" for="loginName">Full Name</label>
+            <input formControlName="name" type="email" id="loginName" class="form-control"  />
+            <span style="color: white;" *ngIf="signupForm.controls['name'].hasError('required') && signupForm.controls['name'].touched">*Name is required</span>
+        </div>
+
+        <div class="form-outline mb-4">
+            <label class="form-label text-white">Mobile Number</label>
+            <input formControlName="mobile" type="text" class="form-control" />
+            <span style="color: white;" *ngIf="signupForm.controls['mobile'].hasError('required') && signupForm.controls['mobile'].touched">*Mobile Number is required</span>
+        </div>
+
+        <div class="form-outline mb-4">
+            <label class="form-label text-white">Email Address</label>
+            <input formControlName="email" type="text" class="form-control" />
+            <span style="color: white;" *ngIf="signupForm.controls['email'].hasError('required') && signupForm.controls['email'].touched">*Email is required</span>
+        </div>
+
+        <div class="form-outline mb-4">
+            <label class="form-label text-white">Password</label>
+           <div class="pwd-class">
+            <input formControlName="password" type="{{ showPassword ? 'text' : 'password' }}" class="form-control" />
+            <ng-container *ngIf = "!showPassword; else template">
+                <i class="fa-regular fa-eye eye-icon" (click)="onToggle()"></i>
+            </ng-container>
+            <ng-template #template>
+                <i class="fa-solid fa-eye-slash eye-icon" (click)="onToggle()"></i>
+            </ng-template>
+           </div>
+            <span style="color: white;" *ngIf="signupForm.controls['password'].hasError('required') && signupForm.controls['password'].touched">*Password is required</span>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="button-class mb-4 text-white" style="text-align: center;" [disabled]="signupForm.invalid">Sign Up</button>
+        </div>
+    </form>
+
+    <div class="text-center">
+        <p>Already Registered? <a href="/login">Click here to log in</a></p>
+      </div>
+</div>

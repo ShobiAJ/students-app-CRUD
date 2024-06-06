@@ -1,0 +1,37 @@
+.tab-content {
+    width: 500px;
+    margin: 3% auto;
+    padding: 40px;
+    border-radius: 6px;
+    background:  linear-gradient(to right, #d74b81, #c55ca6, #df6062, #ea8740);    
+}
+
+.button-class {
+    padding: 10px ;
+    border-radius: 6px;
+    background:  linear-gradient(to right, #dfa57c, #bc6263, #b95b7e, #d5a0c6);
+    margin-top: 20px;
+    border: none;
+    width: 100%;
+    font-size: 20px;
+}
+
+button[disabled] {
+    background: rgb(226, 223, 223);
+    color: black !important;
+}
+
+.text-center a {
+    color: rgb(29, 12, 143);
+    font-size: 20px;
+}
+
+.pwd-class {
+    position: relative;
+}
+
+.eye-icon {
+    position: absolute;
+    right:10px;
+    top: 10px;
+}
